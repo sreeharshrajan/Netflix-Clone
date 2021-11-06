@@ -33,6 +33,12 @@ export const Contents = styled.div`
   padding-top: 110px;
   height: 190px;
 z-index: 4;
+ 
+ @media screen and (max-width:768px){
+   :before{
+   padding-top: 140px;
+   }
+  }
 `;
 export const BannerTitle = styled.h1`
   font-size: 3rem;
