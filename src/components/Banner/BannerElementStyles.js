@@ -35,7 +35,7 @@ export const Contents = styled.div`
 z-index: 4;
  
  @media screen and (max-width:768px){
-   :before{
+   {
    padding-top: 140px;
    }
   }
