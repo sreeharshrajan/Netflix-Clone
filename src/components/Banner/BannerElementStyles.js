@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const BannerContainer = styled.div`
   display: flex;
-  background-image: url(https://wallpaperaccess.com/full/2703652.png);
+
   background-size: cover;
   background-position: center top;
   
-  height: 70vh;
+  height: 80vh;
   color: #fff;
   transition: all 500ms ease-in-out;
   padding-left:15px;
@@ -20,7 +20,7 @@ export const BannerContainer = styled.div`
     height: 100%;
     display: inline-block;
     height: 7.4rem;
-    background-image: linear-gradient(180deg, transparent, #0000009b, #000000);
+    background-image: linear-gradient(180deg,transparent,#000000a2,#000000df,#000000);
   }
 `;
 
@@ -39,7 +39,7 @@ export const BannerDescription = styled.p`
   line-height: 1.5;
   padding-top: 1rem;
   height: 80px;
-  max-width: 360px;
+  max-width: 440px;
 `;
 
 export const BannerButtonsWrapper = styled.div``;
@@ -58,5 +58,11 @@ export const BannerButton = styled.button`
   :hover {
     color: black;
     background-color: #e6e6e6;
+  }
+
+  svg{
+    font-size: 1.44rem;
+    margin-left: 5px;
+    vertical-align: middle;
   }
 `;

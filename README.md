@@ -6,10 +6,9 @@ This project  a simplified front end clone of Netflix. It is created with React 
 
 Following tools are used in the project, you can run:
 
-- Webpack
 - React
-- CSS
-- Media Queries
+- Axios
+- React Icons
 - Styled Components
 
 ### Runing Project Locally
