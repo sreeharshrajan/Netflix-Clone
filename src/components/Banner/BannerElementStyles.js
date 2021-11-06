@@ -24,7 +24,7 @@ export const BannerContainer = styled.div`
   
   @media screen and (max-width:768px){
    :before{
-   bottom: 20vh;
+   bottom: 25vh;
    }
   }
 `;
@@ -43,7 +43,6 @@ export const BannerDescription = styled.p`
      width: 45rem;
     line-height: 1.25;
     padding-top: 1rem;
-    height: 165px;
     max-width: 350px;
   text-overflow:ellipsis;
   overflow:hidden;
