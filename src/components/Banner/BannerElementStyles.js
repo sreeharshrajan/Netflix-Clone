@@ -23,7 +23,9 @@ export const BannerContainer = styled.div`
   }
   
   @media screen and (max-width:768px){
+   :before{
    bottom: 20vh;
+   }
   }
 `;
 
@@ -38,11 +40,18 @@ export const BannerTitle = styled.h1`
   padding-bottom: 0.3rem;
 `;
 export const BannerDescription = styled.p`
-  width: 45rem;
-  line-height: 1.5;
-  padding-top: 1rem;
-  height: 80px;
-  max-width: 440px;
+     width: 45rem;
+    line-height: 1.25;
+    padding-top: 1rem;
+    height: 165px;
+    max-width: 350px;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  // Addition lines for 2 line or multiline ellipsis
+  display: -webkit-box !important;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  white-space: normal;
 `;
 
 export const BannerButtonsWrapper = styled.div``;
