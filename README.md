@@ -11,7 +11,7 @@ Following tools are used in the project, you can run:
 - React Icons
 - Styled Components
 
-### Runing Project Locally
+## Run this Project Locally
 
 - Install dependencies: run `npm install` in root project
 - Get API key from [here](https://www.themoviedb.org/documentation/api)
