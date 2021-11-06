@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 import axios from "../../axios";
-import { API_KEY, imageUrl } from "../../constants/Constants";
+import {  imageUrl } from "../../constants/Constants";
 import {
   TrendingContainer,
   TrendingTitle,
   TrendingPosters,
 } from "./TrendingElements";
-const Trending = () => {
+const Trending = (props) => {
   const [originals, setOriginals] = useState([]);
   useEffect(() => {
     axios
-      .get(`discover/tv?api_key=${API_KEY}&with_networks=213`)
+      .get(props.url)
       .then((response) => {
         console.log(response.data);
         setOriginals(response.data.results);
@@ -21,11 +21,11 @@ const Trending = () => {
   }, []);
   return (
     <TrendingContainer>
-      <TrendingTitle>Netflix Originals</TrendingTitle>
+      <TrendingTitle>{props.title}</TrendingTitle>
       <TrendingPosters className="posters">
         {originals.map((obj) => (
           <img
-            className="poster"
+            className={props.isSmall ? 'smallPoster' : "Poster"}
             src={`${imageUrl+obj.backdrop_path}`}
             alt="Poster"
           />

@@ -2,11 +2,9 @@ import styled from "styled-components";
 
 export const BannerContainer = styled.div`
   display: flex;
-
   background-size: cover;
   background-position: center top;
-  
-  height: 80vh;
+  height: 70vh;
   color: #fff;
   transition: all 500ms ease-in-out;
   padding-left:15px;
@@ -15,19 +13,20 @@ export const BannerContainer = styled.div`
     content: "";
     position: absolute;
     left: 0;
-    bottom: 20vh;
+    bottom: 30vh;
     width: 100%;
     height: 100%;
     display: inline-block;
     height: 7.4rem;
     background-image: linear-gradient(180deg,transparent,#000000a2,#000000df,#000000);
+    z-index: 1;
   }
 `;
 
 export const Contents = styled.div`
-  padding-top: 140px;
+  padding-top: 110px;
   height: 190px;
-
+z-index: 4;
 `;
 export const BannerTitle = styled.h1`
   font-size: 3rem;

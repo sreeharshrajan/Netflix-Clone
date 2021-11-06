@@ -4,6 +4,8 @@ export const TrendingContainer = styled.section`
   margin-left:20px;
   margin-top:20px;
   color: #fff;
+  transition: all 500ms ease-in-out;
+  scroll-behavior: smooth;
 `
 
 export const TrendingTitle = styled.h2`
@@ -20,8 +22,16 @@ export const TrendingPosters = styled.div`
 ::-webkit-scrollbar{
       display: none;
   }
-  .poster{
+
+  .Poster{
       max-height: 250px;
       margin-right:10px;
+      border-radius: 8px;
+  }
+
+  .smallPoster{
+    max-height: 110px;
+    margin-right:15px;
+    border-radius: 8px;
   }
 `
