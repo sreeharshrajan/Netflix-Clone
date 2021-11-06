@@ -21,6 +21,10 @@ export const BannerContainer = styled.div`
     background-image: linear-gradient(180deg,transparent,#000000a2,#000000df,#000000);
     z-index: 1;
   }
+  
+  @media screen and (max-width:768px){
+   bottom: 20vh;
+  }
 `;
 
 export const Contents = styled.div`
