@@ -24,7 +24,7 @@ export const BannerContainer = styled.div`
   
   @media screen and (max-width:768px){
    :before{
-   bottom: 25vh;
+   bottom: 23vh;
    }
   }
 `;
@@ -48,7 +48,7 @@ export const BannerDescription = styled.p`
   overflow:hidden;
   // Addition lines for 2 line or multiline ellipsis
   display: -webkit-box !important;
-  -webkit-line-clamp: 6;
+  -webkit-line-clamp: 8;
   -webkit-box-orient: vertical;
   white-space: normal;
 `;
